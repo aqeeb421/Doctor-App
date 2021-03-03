@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.VideoCallActivity">
+
+
+    <LinearLayout
+        android:id="@+id/lnr_callScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/income_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:elevation="8dp"
+            android:src="@drawable/user"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/patient_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Aqeeb H J"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Incoming Call"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="bottom|center"
+            android:visibility="visible">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/answer_call"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="8dp"
+                android:layout_marginTop="50dp"
+                android:elevation="4dp"
+                android:src="@drawable/answer_call"
+                app:civ_border_color="@android:color/transparent"
+                app:civ_border_width="1dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/reject_call"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="8dp"
+                android:layout_marginTop="50dp"
+                android:elevation="4dp"
+                android:src="@drawable/end_call"
+                app:civ_border_color="@color/red"
+                app:civ_border_width="10dp"
+                app:civ_circle_background_color="@color/red" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/calling_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/subscriber_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/publisher_container"
+            android:layout_width="90dp"
+            android:layout_height="120dp"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFFFFF"
+            android:padding="2dp" />
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/lnr_callAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:gravity="bottom|center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/camera"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:layout_marginTop="50dp"
+            android:elevation="4dp"
+            android:src="@drawable/ic_baseline_flip_camera_android_24"
+            app:civ_border_color="@color/greylite"
+            app:civ_border_width="10dp"
+            app:civ_circle_background_color="@color/greylite" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mute_voice"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:layout_marginTop="50dp"
+            android:elevation="4dp"
+            android:src="@drawable/ic_baseline_mic_off_24"
+            app:civ_border_color="@color/greylite"
+            app:civ_border_width="10dp"
+            app:civ_circle_background_color="@color/greylite" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mute_video"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:layout_marginTop="50dp"
+            android:elevation="4dp"
+            android:src="@drawable/ic_baseline_videocam_off_24"
+            app:civ_border_color="@color/greylite"
+            app:civ_border_width="10dp"
+            app:civ_circle_background_color="@color/greylite" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/end_call"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:layout_marginTop="50dp"
+            android:elevation="4dp"
+            android:src="@drawable/ic_baseline_call_end_24"
+            app:civ_border_color="@color/greylite"
+            app:civ_border_width="10dp"
+            app:civ_circle_background_color="@color/greylite" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

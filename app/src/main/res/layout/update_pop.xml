@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:background="@color/primaryColor"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Update Profile"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/update_profile_image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/d2"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="1dp"
+            app:civ_circle_background_color="@color/white" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/edt_background"
+                android:drawableStart="@drawable/ic_account_box"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="phone Number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/edt_background"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/edt_background"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="About">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/edt_background"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColorHint="@color/primaryColor"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="50"
+                android:background="@drawable/edt_background"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="10dp"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/primaryColor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Update"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="50"
+                android:background="@drawable/edt_background"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="10dp"
+                android:text="Update"
+                android:textAllCaps="false"
+                android:textColor="@color/primaryColor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

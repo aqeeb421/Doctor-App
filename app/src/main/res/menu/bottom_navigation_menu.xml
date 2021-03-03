@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/menu_home"
+        android:enabled="true"
+        android:icon="@drawable/home"
+        android:title="Home"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/menu_new_consult"
+        android:enabled="true"
+        android:icon="@drawable/new_consult"
+        android:title="Availability"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/menu_appointment"
+        android:enabled="true"
+        android:icon="@drawable/appointment"
+        android:title="Appointment"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/menu_my_consultation"
+        android:enabled="true"
+        android:icon="@drawable/consult"
+        android:title="Consultations"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/menu_profile"
+        android:enabled="true"
+        android:icon="@drawable/profile"
+        android:title="Settings"
+        app:showAsAction="withText" />
+
+
+</menu>

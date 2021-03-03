@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".activity.AvailabityActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/back_arrow_black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Availability"
+                android:textAlignment="center"
+                android:textColor="#3f3f3f"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/dayGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edt_background"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="70">
+
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/simpleSwitch1"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:layout_weight="10"
+                android:background="@drawable/day_selector"
+                android:button="@null"
+                android:padding="6dp"
+                android:text="MON"
+                android:textColor="@drawable/radio_text_selected" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/simpleSwitch2"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="10"
+                android:background="@drawable/day_selector"
+                android:button="@null"
+                android:padding="12dp"
+                android:text="TUE"
+                android:textColor="@drawable/radio_text_selected" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/simpleSwitch3"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="10"
+                android:background="@drawable/day_selector"
+                android:button="@null"
+                android:padding="8dp"
+                android:text="WED"
+                android:textColor="@drawable/radio_text_selected" />
+
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/simpleSwitch4"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="10"
+                android:background="@drawable/day_selector"
+                android:button="@null"
+                android:padding="10dp"
+                android:text="THU"
+                android:textColor="@drawable/radio_text_selected" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/simpleSwitch5"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="10"
+                android:background="@drawable/day_selector"
+                android:button="@null"
+                android:padding="12dp"
+                android:text="FRI"
+                android:textColor="@drawable/radio_text_selected" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/simpleSwitch6"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="10"
+                android:background="@drawable/day_selector"
+                android:button="@null"
+                android:padding="10dp"
+                android:text="SAT"
+                android:textColor="@drawable/radio_text_selected" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/simpleSwitch7"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="10"
+                android:background="@drawable/day_selector"
+                android:button="@null"
+                android:padding="10dp"
+                android:text="SUN"
+                android:textColor="@drawable/radio_text_selected" />
+
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="80dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="start Time"
+                    android:textColor="#2d2c2a"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/editText_startTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edt_background"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Enter Start Time"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textColor="#3f3f3f"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="-10dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center_vertical"
+                android:text="To"
+                android:textColor="#2d2c2a"
+                android:textSize="12sp" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="End Time"
+                    android:textColor="#2d2c2a"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/editText_endTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edt_background"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Enter End Time"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textColor="#3f3f3f"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/primaryColor" />
+
+
+        <Button
+            android:id="@+id/addAvailButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/poppins_semibold"
+            android:padding="10dp"
+            android:text="Add Availability"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/addAvailListButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/poppins_semibold"
+            android:padding="10dp"
+            android:text="Availability List"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/navigation"
+        layout="@layout/element_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp" />
+
+
+</RelativeLayout>
